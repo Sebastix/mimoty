@@ -207,7 +207,6 @@ func initApp() error {
 	setupRelay(relay)
 
 	seedRelays = []string{
-		"wss://nos.lol",
 		"wss://nostr.mom",
 		"wss://purplepag.es",
 		"wss://purplerelay.com",
@@ -215,11 +214,8 @@ func initApp() error {
 		"wss://relay.nostr.band",
 		"wss://relay.snort.social",
 		"wss://relay.primal.net",
-		"wss://relay.nostr.bg",
 		"wss://no.str.cr",
-		"wss://nostr21.com",
-		"wss://nostrue.com",
-		"wss://relay.siamstr.com",
+		"wss://relay.kubo.watch",
 	}
 
 	ctx := context.Background()
@@ -263,7 +259,7 @@ func validateConfig(config *Config) error {
 	}
 
 	if config.Port == "" {
-		config.Port = "3334"
+		config.Port = "3666"
 	}
 
 	var err error
